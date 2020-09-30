@@ -1,0 +1,338 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+body{
+  color: white;
+  background-color:#13161F;
+  height: auto;
+    
+}
+
+.App {
+  background-image: linear-gradient(to bottom,rgb(19,22,31,0) 0%, rgb(19,22,31,0) 10%, rgb(19,22,31,1) 100%), url("./images/bg2.jpg");
+  background-size: cover;
+  height: 80vh;
+  margin-top: -35px;
+
+}
+
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top:35px;
+  padding-right: 20px;
+  background-color: rgba(0, 0, 0, 0.25);
+
+}
+
+.Navbar >  a {
+  color: white;
+  padding: 5px 15px 5px 15px;
+  margin: none;
+  text-decoration: none;
+}
+
+.Navbar :hover {
+  background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+.Navbar .nav-logo {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 10px;
+
+
+}
+
+/* Search Nav */
+
+
+.search  {
+  font-size: 1.2em;
+  background: rgba(0, 0, 0, 0.0);
+  border: 2px solid rgba(0, 0, 0, 0.1);;
+  height: 35px;
+  width: 50vh;
+  color: white;
+}
+
+.search:hover{
+  border: none;
+}
+
+.search:focus {
+  outline: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Loading */
+.loading {
+  font-size: 2em;
+  text-align: center;
+  margin: auto;
+}
+
+.card-epi-type {
+  font-size: 0.8em;
+  display: flex;
+  text-align: center;
+  width: 160px;
+  height: 24px;
+  margin: 0 auto 0 auto;
+  position: relative;
+  top: -19px;
+
+}
+/* anime type */
+.anime-type {
+  background: rgb(255, 82, 255);
+  margin: 0px;
+  padding: 0px;
+  height: 1.5em;
+  width: 3em;
+  border-bottom-left-radius: 6px;
+}
+
+/* anime episodes */
+.anime-episodes {
+  background: rgb(82, 108, 255);
+  margin: 0px;
+  padding: 0px;
+  height: 1.5em;
+  width: 3em;
+  border-bottom-right-radius: 6px;
+  margin-left: auto;
+  
+
+}
+
+.card {
+  background-color: #13161F;
+  margin: 0 auto;
+  margin-top: 70px;
+  height: 50vh;
+  width: 60%;
+  display: flex;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 6px;
+
+  -webkit-box-shadow: 0px 10px 25px 2px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 10px 25px 2px rgba(0,0,0,0.5);
+box-shadow: 0px 10px 25px 2px rgba(0,0,0,0.5);
+  
+}
+
+.card > img {
+  height: 100%;
+  position: relative;
+  top: -30px;
+  left: 35px;
+  /* border-radius: 6px; */
+
+  -webkit-box-shadow: 10px 10px 25px 2px rgba(0,0,0,0.5);
+-moz-box-shadow: 10px 10px 25px 2px rgba(0,0,0,0.5);
+box-shadow: 10px 10px 25px 2px rgba(0,0,0,0.5);
+}
+
+.card .title {
+  text-align: center;
+  margin: 0px 30px 0px 30px;
+  padding: 30px;
+}
+
+.card-details {
+  margin-left: auto;
+  
+}
+
+.card .episodes {
+  margin-left: 30px;
+}
+
+.card .members {
+  float: right;
+  margin-right: 30px;
+}
+.card .member-number {
+  color: gold;
+
+}
+
+.card .score {
+  float: right;
+  font-size: 3em;
+  position: relative;
+  top: -10px;
+  left: -50px;
+}
+
+.card .type {
+  margin-top: 45px;
+  margin-left: 30px;
+
+}
+
+
+/* Top Airing */
+
+.icon {
+  height: 40px;
+  width: 40px;
+  fill: pink;
+  position: relative;
+  top: -10px;
+}
+.icon-calender {
+  height: 30px;
+  width: 30px;
+  fill: pink;
+  position: relative;
+  top: -2px;
+}
+.title-topAiring {
+  border-bottom: 0.01px solid rgba(255, 255, 255, 0.1);
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0px;
+}
+.more-topAiring {
+  
+  color: white;
+  padding: none;
+  margin: none;
+  margin-left: auto;
+  align-self: center;
+
+}
+
+.topAiring {
+  padding: 0px 10px 0px 10px;
+  margin: 0px;
+}
+
+.Grid-topAiring {
+  margin: 50px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: 300px;
+  grid-gap: 5px;
+  
+}
+
+.card-topAiring {
+  
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card-topAiring:hover {
+  transform: scale(1.2, 1.2);
+  transition: transform  400ms ease-in-out;
+}
+
+.card-topAiring > img:hover {
+  -webkit-box-shadow: 5px 10px 40px 15px rgba(0,0,0,0.7);
+-moz-box-shadow: 5px 10px 40px 15px rgba(0,0,0,0.7);
+box-shadow: 5px 10px 40px 15px rgba(0,0,0,0.7);
+
+  transition: box-shadow 300ms ease-in-out;
+}
+.card-topAiring > p {
+  margin: 10px 10px 0 10px ;
+  text-align: center;
+  line-height: 1.1em;
+  position: relative;
+  top: -20px;
+}
+
+.image-topAiring{
+  border-radius: 10px;
+  height: 250px;
+  width: 160px;
+  margin: 0 auto;
+}
+
+
+/* About */
+.about-container {
+  background-image: linear-gradient(to top,rgb(19,22,31,0) 0%, rgb(19,22,31,0) 10%, rgb(19,22,31,1) 80%), url("./images/bg2.jpg");
+  background-size: cover;
+  
+  height: 40vh;
+  color: rgba(255, 255, 255,0.8);
+  padding-bottom: 60px;
+
+}
+.about {
+  
+}
+
+.about-icon {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 4px;
+  left: 10px;
+}
+
+.about-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  
+}
+
+.Logo {
+  margin: auto;
+}
+
+.about-table {
+  margin: auto;
+  text-align: left;
+  
+}
+
+.about-table > th, td {
+  padding-right: 100px;
+}
+.copyright {
+  text-align: center ;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1em;
+  vertical-align: bottom;
+}
